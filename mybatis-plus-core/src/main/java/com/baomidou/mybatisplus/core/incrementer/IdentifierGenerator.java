@@ -18,6 +18,7 @@ package com.baomidou.mybatisplus.core.incrementer;
 
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.github.ksuid.KsuidGenerator;
 
 
 /**
@@ -56,4 +57,15 @@ public interface IdentifierGenerator {
     default String nextUUID(Object entity) {
         return IdWorker.get32UUID();
     }
+
+    /**
+     * 生成ksuid
+     *
+     * @param entity 实体
+     * @return ksuid
+     */
+    default String nextKsuid(Object entity) {
+        return KsuidGenerator.generate();
+    }
+
 }

@@ -131,6 +131,8 @@ public class MybatisParameterHandler extends DefaultParameterHandler {
                     } else {
                         log.warn("The current ID generation strategy does not support: " + tableInfo.getKeyType());
                     }
+                } else if (idType.getKey() == IdType.ASSIGN_KSUID.getKey()) {
+                    metaObject.setValue(keyProperty, identifierGenerator.nextKsuid(entity));
                 }
             }
         }

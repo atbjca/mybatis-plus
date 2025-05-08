@@ -1,6 +1,7 @@
 dependencies {
     api project(":mybatis-plus-annotation")
     api "${lib.mybatis}"
+    api "${lib.ksuid}"
 
     implementation "${lib.cglib}"
     implementation "${lib.'spring-aop'}"

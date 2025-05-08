@@ -1,3 +1,23 @@
+### 功能说明
+
+1. IdType 增加 Ksuid
+2. 修改项目版本避免 mybatis-plus 被扫描为 mybatis 组件而发生误报![img](imgs/误报.png)
+
+### 版本说明
+
+版本暂定为 999.3.5.12-bjca-patch-SNAPSHOT
+
+版本说明：
+
+1. 999 是为了避免扫描到版本信息，增加的前缀。无实际意义
+2. 3.5.12 源码的版本
+3. bjca-patch 是增加的版本后缀，下一次的版本是 bjca-patch-01
+
+### 发布说明
+
+sh deploy.sh
+
+---
 <p align="center">
   <a href="https://github.com/baomidou/mybatis-plus">
    <img alt="Mybatis-Plus-Logo" src="https://raw.githubusercontent.com/baomidou/logo/master/mybatis-plus-logo-new-mini.png">
@@ -42,7 +62,8 @@
 ## What is MyBatis-Plus?
 
 MyBatis-Plus is a powerful and enhanced toolkit of MyBatis for simplifying development.
-It provides efficient, and out-of-the-box features (such as code generation, conditional query builders, pagination plugins...), effectively saving development time
+It provides efficient, and out-of-the-box features (such as code generation, conditional query builders, pagination
+plugins...), effectively saving development time
 
 ## Links
 
